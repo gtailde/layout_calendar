@@ -57,9 +57,7 @@ body {
   @each $day, $index in $days {
     &--start-day-#{$day} {
       .calendar__day:nth-child(1) {
-        $margin-left: get-width($index) + 1;
-
-        margin-left: $margin-left;
+        margin-left: get-width($index) + $border;
       }
     }
   }
